@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Planet Earth Presentation</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Courier, monospace;
+      background-color: #1d1f20;
+      color: #f8f8f2;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeIn 1.5s ease-out forwards;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #4AF626;
+      text-shadow: 0 0 10px #4AF626;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 700px;
+      margin: auto;
+      animation: slideUp 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    .section:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+
+    .section:nth-child(3) {
+      animation-delay: 1s;
+    }
+
+    .section:nth-child(4) {
+      animation-delay: 1.5s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Planet Earth 🌍</h1>
+    <p>A retro-coded tribute to the home we call ours.</p>
+  </header>
+
+  <div class="section">
+    <h2>🌱 Biodiversity</h2>
+    <p>Earth teems with life — from the tiniest microbe to towering redwoods, every organism plays its part.</p>
+  </div>
+
+  <div class="section">
+    <h2>🌋 Geology</h2>
+    <p>Mountains rise, plates shift, and volcanoes roar — Earth's crust is ever-evolving, shaped by ancient forces.</p>
+  </div>
+
+  <div class="section">
+    <h2>🌎 Atmosphere</h2>
+    <p>A blend of nitrogen, oxygen, and trace gases shelters life and paints our skies with weather and wonder.</p>
+  </div>
+
+  <footer>
+    © 2025 — Coded with nostalgia by Aaron Benny George
+  </footer>
+
+</body>
+</html>
